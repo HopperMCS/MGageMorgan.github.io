@@ -5,18 +5,31 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <style>
-
 .card {
 font-family: 'Roboto', sans-serrif;
 -webkit-box-shadow: 0px 2px 4px 0px rgba(158,158,158,1);
 -moz-box-shadow: 0px 2px 4px 0px rgba(158,158,158,1);
 box-shadow: 0px 2px 4px 0px rgba(158,158,158,1);
 padding-left: 17px;
-width: 70%;
+width: 35%;
 height: auto;
 font-size: 14px;
 background-color: white;
 text-align: left;
+animation-duration: 5s;
+animation-name: cards;
+}
+
+@keyframes cards {
+    from {
+      margin-bottom: 100%;
+      width: 35%;
+    }
+
+    to {
+    margin-bottom: 0%;
+    width: 35%;
+    }
 }
 
 #headbar {
@@ -31,6 +44,21 @@ padding-top: 1px;
 padding-bottom: 1px;
 background-color: #3F51B5;
 color: white;
+animation-duration: 5s;
+animation-name: header;
+margin: 0px;
+}
+
+@keyframes header {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+
+    to {
+    margin-left: 0%;
+    width: 300%;
+    }
 }
 
 body {
@@ -39,7 +67,7 @@ margin: 0px;
 
 p {
   overflow: hidden;
-  max-width: 85ch;
+  max-width: 55ch;
 }
 </style>
 <!-- This is 100% non-Googs. I wrote the code this time around. -->
@@ -69,7 +97,7 @@ MGageMorgan on the GitHubs
 <center>
 
 <!-- A card, mimicking paper -->
-<div class="card">
+<div class="card" id="1">
 <br>
 <p>
 Hi! I'm MGageMorgan, co-founder of Christoffen Corporation, and creator of Cards Against Clark, the client-server model of the card game Cards Against Humanity.
@@ -80,7 +108,7 @@ Hi! I'm MGageMorgan, co-founder of Christoffen Corporation, and creator of Cards
 <br />
 
 <!-- A card, mimicking paper -->
-<div class="card">
+<div class="card" id="2">
 <br />
 <h2>3/28/16</h2>
 <p>Hello, I'm back again. I have made improvements to the code, and I've decided to make this my blog for the time being. I feel it's more...efficient to work directly within the design than without it. So, as you can tell, I've made the cards in line with Google's specification, as well as the header. It feels great to have done that.</p>
@@ -92,7 +120,7 @@ Hi! I'm MGageMorgan, co-founder of Christoffen Corporation, and creator of Cards
 <br />
 
 <!-- A card, mimicking paper -->
-<div class="card">
+<div class="card" id="3">
 <br>
 <h2>3/26/16</h2>
 <p>
@@ -102,54 +130,6 @@ Well, this page is fully functional it looks like, as I code this as I write at 
 </div>
 
 <br /><br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
