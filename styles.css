@@ -13,6 +13,21 @@ animation-duration: 5s;
 animation-name: cards;
 }
 
+.chat-card {
+font-family: 'Roboto', sans-serrif;
+-webkit-box-shadow: 0px 2px 4px 0px rgba(158,158,158,1);
+-moz-box-shadow: 0px 2px 4px 0px rgba(158,158,158,1);
+box-shadow: 0px 2px 4px 0px rgba(158,158,158,1);
+padding-left: 17px;
+width: 602px;
+height: 602px;
+font-size: 14px;
+background-color: white;
+text-align: left;
+animation-duration: 5s;
+animation-name: cards;
+}
+
 @keyframes cards {
     from {
       margin-bottom: 100%;
